@@ -13,9 +13,14 @@ students = [
 students[0]['last_name'] = 'Bryant'
 print(students)
 
+    # 3. In the sports_directory, change 'Messi' to 'Andres'
 sports_directory = {
     'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
     'soccer' : ['Messi', 'Ronaldo', 'Rooney']
 }
+
+sports_directory['soccer'][0] = 'Andres'
+print(sports_directory)
+
 z = [ {'x': 10, 'y': 20} ]
 
