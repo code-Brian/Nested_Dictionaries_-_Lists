@@ -23,4 +23,7 @@ sports_directory['soccer'][0] = 'Andres'
 print(sports_directory)
 
 z = [ {'x': 10, 'y': 20} ]
+    # 4. Change the value 20 in z to 30
+z[0]['y'] = 30
+print(z)
 
