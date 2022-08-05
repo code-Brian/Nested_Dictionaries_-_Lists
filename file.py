@@ -44,7 +44,13 @@ def iterateDictionary(list):
     for i in range(0, len(list)):
         print(list[i]["first_name"], list[i]["last_name"])
 
+# Question 2: Bonus for formatting
+def iterateDictionaryBonus(list):
+    for i in range(0, len(list)):
+        print(f"first_name - {list[i]['first_name']}, last_name - {list[i]['last_name']}")
+
 iterateDictionary(students) 
+iterateDictionaryBonus(students) 
 # should output: (it's okay if each key-value pair ends up on 2 separate lines;
 # bonus to get them to appear exactly as below!)
 first_name - Michael, last_name - Jordan
