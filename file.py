@@ -49,11 +49,33 @@ def iterateDictionaryBonus(list):
     for i in range(0, len(list)):
         print(f"first_name - {list[i]['first_name']}, last_name - {list[i]['last_name']}")
 
-iterateDictionary(students) 
-iterateDictionaryBonus(students) 
-# should output: (it's okay if each key-value pair ends up on 2 separate lines;
-# bonus to get them to appear exactly as below!)
+'''
 first_name - Michael, last_name - Jordan
 first_name - John, last_name - Rosales
 first_name - Mark, last_name - Guillen
 first_name - KB, last_name - Tonel
+
+'''
+
+iterateDictionary(students) 
+iterateDictionaryBonus(students) 
+
+# should output: (it's okay if each key-value pair ends up on 2 separate lines;
+# bonus to get them to appear exactly as below!)
+
+# 3. Get Values from a List of dictionaries. 
+# Create a function iterateDictionary2(key_name, some_list) that, given a list of dictionaries
+# and a key name, the function prints the value stored in that key for each dictionary. 
+# For example, iterateDictionary('first_name', students) should output: 
+'''
+Michael
+John
+Mark
+KB
+'''
+
+def iterateDictionary2(key_name, list):
+    for i in range(0,len(list)):
+        print(list[i][key_name])
+        
+iterateDictionary2('first_name', students)
