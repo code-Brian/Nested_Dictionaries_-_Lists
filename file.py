@@ -77,5 +77,48 @@ KB
 def iterateDictionary2(key_name, list):
     for i in range(0,len(list)):
         print(list[i][key_name])
-        
+
 iterateDictionary2('first_name', students)
+
+# 4. Iterate Through a Dictionary with List Values
+# Create a function printInfo(dict) that give a dictionary whose values are all lists, prints
+# the name of each key along with the size of its list, and then prints the associated
+# values within each key's list. for example: 
+
+dojo = {
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+def printInfo(dict):
+    # iterate through each key in dictionaries
+    for key, value in dict.items():
+        # print the key value in upper case, as well as the length of each list
+        print( f"{len(value)} {key.upper()} ")
+        # iterate through each list in each key
+        for i in range(0,len(value)):
+        # print the value of each index
+            print(value[i])
+
+
+printInfo(dojo)
+
+# output:
+# 7 LOCATIONS
+# San Jose
+# Seattle
+# Dallas
+# Chicago
+# Tulsa
+# DC
+# Burbank
+    
+# 8 INSTRUCTORS
+# Michael
+# Amy
+# Eduardo
+# Josh
+# Graham
+# Patrick
+# Minh
+# Devon
