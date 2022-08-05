@@ -41,8 +41,8 @@ students = [
     ]
 
 def iterateDictionary(list):
-    for i in list:
-        print(list[['first_name'][i]['last_name'][i]])
+    for i in range(0, len(list)):
+        print(list[i]["first_name"], list[i]["last_name"])
 
 iterateDictionary(students) 
 # should output: (it's okay if each key-value pair ends up on 2 separate lines;
